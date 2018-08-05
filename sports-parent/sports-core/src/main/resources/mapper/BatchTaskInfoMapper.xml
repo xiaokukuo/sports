@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sports.core.mapper.BatchTaskInfoMapper">
+
+	<resultMap id="BatchTaskMap" type="org.sports.core.model.BatchTaskInfo">
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<id column="task_name" property="taskName"/>
+		<id column="task_group" property="taskGroup"/>
+		<id column="task_type" property="taskType"/>
+		<id column="cron" property="cron"/>
+		<id column="class_name" property="className"/>
+		<id column="status" property="status"/>
+		<id column="lastest_time" property="lastestTime"/>
+		<id column="desc" property="desc"/>
+	</resultMap>
+
+	<select id="selectById" parameterType="java.lang.Integer" resultMap="BatchTaskMap">
+		select * from batch_task_info where id = #{id}
+	</select>
+	<select id="selectAll" resultMap="BatchTaskMap">
+		select * from batch_task_info
+	</select>
+	<insert id="insert" keyProperty="entity.id" useGeneratedKeys="true">
+		insert into batch_task_info 
+		(`task_name`, `task_group`, `task_type`, `cron`, `class_name`, `status`, `lastest_time`, `desc`)
+		values
+		(#{entity.taskName}, #{entity.taskGroup}, #{entity.taskType}, #{entity.cron}, 
+		#{entity.className}, #{entity.status}, #{entity.lastestTime}, #{entity.desc})
+	</insert>
+
+	<insert id="insertByBatch" keyProperty="id" useGeneratedKeys="true">
+		insert into batch_task_info 
+		(`task_name`, `task_group`, `task_type`, `cron`, `class_name`, `status`, `lastest_time`, `desc`)
+		values
+		<foreach collection="list" item="item" index="index" separator=",">
+			(#{entity.taskName}, #{entity.taskGroup}, #{entity.taskType}, #{entity.cron}, 
+			#{entity.className}, #{entity.status}, #{entity.lastestTime}, #{entity.desc})
+		</foreach>
+	</insert>
+
+	<update id="truncateTable">
+		truncate table batch_task_info
+	</update>
+
+
+</mapper>
