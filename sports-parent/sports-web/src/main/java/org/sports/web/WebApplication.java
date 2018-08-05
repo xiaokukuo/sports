@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 
-@SpringBootApplication(scanBasePackages = { "com.sports.crab" })
+@SpringBootApplication(scanBasePackages = { "org.sports" })
 @PropertySources({ @PropertySource(encoding = "UTF-8", value = { "classpath:/config/jdbc.properties" }) })
 @MapperScan(value = { "org.sports.core.mapper" }, nameGenerator = MapperNameGenerator.class)
 public class WebApplication {

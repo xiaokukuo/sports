@@ -1,38 +1,28 @@
 package org.sports.batch;
 
-import junit.framework.Test;
+import java.util.List;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.sports.core.model.ExponentData;
+import org.sports.core.service.ExponentDataService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class AppTest extends TestCase {
+	
+	@Autowired
+	private ExponentDataService exponentDataService;
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+	@Test
+	public void contextLoads() {
+		List<ExponentData> list = exponentDataService.findAll();
+		System.out.println(list.toArray());
+	}
+	
 }
