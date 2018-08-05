@@ -1,0 +1,132 @@
+@import url('//www.nowscore.com/css/header.css');
+body{background-color:#dadada;color:#333;font-size:9pt;font-family:Tahoma,Arial,Helvetica,"微软雅黑"}
+body,div,form,h1,h2,h3,h4,img,input,p,span,textarea,ul{margin:0;padding:0}
+ul{list-style-type:none}
+li{vertical-align:bottom}
+img{border-width:0}
+a:link,a:visited{color:#333;text-decoration:none}
+a:hover{color:#c30;text-decoration:underline}
+a.pk:link,a.pk:visited{color:#00f;text-decoration:none;font-weight:700;font-size:9pt}
+a.pk:hover{color:red;text-decoration:underline;font-weight:700;font-size:9pt}
+.blue A:link,.blue A:visited{color:#00f;text-decoration:none;font-size:9pt}
+.blue A:hover{color:red;text-decoration:underline;font-size:9pt}
+A.title:link,A.title:visited{color:#fff;text-decoration:none;font-size:11pt}
+A.title:hover{color:red;text-decoration:underline;font-size:11pt}
+A.sb:link,A.sb:visited{color:#c00;text-decoration:none;font-weight:700;font-family:Arial}
+A.sb:hover{color:#006;font-weight:700;font-family:Arial}
+A.pl:link,A.pl:visited{color:#200080;text-decoration:none}
+A.pl:hover,A.pl:link,A.pl:visited{font-weight:700;font-family:宋体}
+A.pl:hover{color:#b00}
+a.pk:link,a.pk:visited{color:#00f;text-decoration:none;font-weight:700;font-size:9pt}
+a.pk:hover{color:red;text-decoration:underline;font-weight:700;font-size:9pt}
+#headAd{padding:3px 0 0;text-align:center}
+.Leaguestitle{background-color:#e0e9f6}
+#oddsmain{margin:0 auto;padding:0 4px;width:942px;background-color:#fff}
+#oddsmain #left{float:left;width:95pt}
+#oddsmain #middle{margin:0 125px; width:690px;}
+#oddsmain #right{float:right;width:90pt;color:#333}
+#right2{float:right;width:145px}
+.ad_div{margin-bottom:6px}
+#oddsnews{display:block;padding-left:9pt;width:678px;height:28px;background-image:url(images/mig_b.gif);line-height:28px}
+#oddsnews span{padding-left:20px;background:url(images/redarrow.gif) no-repeat left top}
+#oddstool{padding:0 6px;height:28px;border-top:1px solid #7199dc;border-right:1px solid #7199dc;border-left:1px solid #7199dc;background-image:url(images/mig_b2.gif);color:#fff}
+.tool a{float:left;display:block;margin-top:4px;margin-right:15px;width:71px;height:23px}
+.k1 a{background-image:url(images/tool.gif)}
+.k1 a:hover{background:url(images/tool.gif) left 23px}
+.k2 a{background:url(images/tool.gif) -71px top}
+.k2 .selected,.k2 a:hover{background:url(images/tool.gif) -71px 23px}
+.k3 a{background:url(images/tool.gif) -142px top}
+.k3 .selected,.k3 a:hover{background:url(images/tool.gif) -142px 23px}
+.k4 a{background:url(images/tool.gif) -213px top}
+.k4 .selected,.k4 a:hover{background:url(images/tool.gif) -213px 23px}
+.k5 a{background:url(images/tool.gif) -284px top}
+.k5 .selected,.k5 a:hover{background:url(images/tool.gif) -284px 23px}
+.k6 a{background:url(images/tool.gif) -355px top}
+.k6 .selected,.k6 a:hover{background:url(images/tool.gif) -355px 23px}
+.tool_g{float:left;display:block;margin-left:9pt;padding-top:4px}
+#oddstool2{clear:both;height:28px;border:1px solid #76bbe3;background-color:#e0e8ff}
+.tg3{float:left;padding-top:3px}
+.tg3 li{float:left;}
+.tg3 li+li{margin-left:6px}
+.tg3 li a{float:left;display:block;padding-left:5px;height:23px;background:url(../images/hy.gif) repeat-x left;text-align:center;line-height:23px}
+.tg3 li a span{display:block;padding-right:5px;background:url(../images/hy2.gif) no-repeat right}
+.tg3 .selected,.tg3 .selected a,.tg3 li a:hover{background-image:url(../images/hy_on.gif);text-decoration:none}
+.tg3 .selected span,.tg3 li a:hover span{background:url(../images/hy2_on.gif) no-repeat right}
+.nav_on a,.nav_on a:hover{border-left:1px solid #b8e27e;background-image:url(images/mig_on_hov2.gif);color:#fff}
+.lf{margin-bottom:6px;padding:5px;width:81pt;border:1px solid #ccc;background:url(images/l_div.gif) repeat-x top;color:#999;line-height:24px}
+.company{padding-left:22px;width:98px;background-image:url(images/comp.gif);color:#fff;font-weight:700;font-size:9pt;line-height:26px;text-align:left}
+.comp_li{margin-bottom:4px;padding-bottom:3px;padding-left:2px;width:110px;border-right:1px solid #ccc;border-bottom:1px solid #ccc;border-left:1px solid #ccc;background-color:#f2f2f2;text-align:left}
+.b_tab{margin-top:-1px;background-color:#ddd}
+.b_tab td{text-align:center}
+.stit{background-color:#7ea7e2;color:#fff;line-height:20px}
+.stit2{background-color:#52a971}
+.down,.firstodds,.normal,.up{font-family:Arial,Helvetica,sans-serif}
+.firstodds{color:#888}
+.firstodds2{margin-bottom:4px;padding-bottom:4px;border-bottom:1px solid #ddd;color:#666}
+.normal{color:#333}
+.normal,.up{font-weight:700}
+.up{color:#d20055}
+.down{color:#393;font-weight:700}
+.team_name{float:left}
+.bf{color:#03c;font-weight:700;font-size:14px}
+.bf,.time{float:right}
+.juy{clear:both;display:block;width:156px;height:21px;line-height:21px}
+.toolimg li{float:left;margin-bottom:3px;margin-left:3px}
+.ad_tab{height:25px;border-right:1px solid #ddd;border-left:1px solid #ddd;background-color:#fff;color:#999;text-align:center;line-height:25px}
+.bbt{margin:0 2px;width:44px;height:22px;border:0;background-image:url(/images/bbt.gif);line-height:22px}
+#odds tr{text-align:center}
+.close td{background-color:#ccc}
+.white td{background-color:#fff}
+.trSelected td{background-color:#fdd}
+.score{color:#00f}
+.odds,.score{font-weight:700}
+.odds{color:#200080;font-size:9pt;font-family:"宋体"}
+.b_tab_old{padding:3px 2px 0;border:0 solid #c93;background-color:#666}
+.b_cen{background-color:#fff;text-align:center}
+.scoreR{color:red;font-weight:700;font-family:verdana;cursor:pointer}
+#sd{background-image:none}
+.red_number{color:red;font-weight:700;font-family:tahoma}
+#LeagueDiv{position:absolute;top:75px;left:40px;z-index:5;visibility:hidden;padding:1px 1px 1px 4px;width:605px;border:2px solid #666;background-color:#fff}
+#LeagueDiv.header{float:left;padding-left:15px;font-weight:700;font-size:9pt}
+#LeagueDiv li{float:left;display:block;margin:2px;padding-left:3px;width:88px;border:1px solid #bbb;text-align:left;line-height:22px}
+#divMatchType1,#divMatchType2,#divMatchType3{position:absolute;top:25px;z-index:8;visibility:hidden;padding:3px;width:60px;border:2px solid #666;background-color:#fff;text-align:center;line-height:22px}
+#divMatchType1{left:92px}
+#divMatchType2{left:165px}
+#divMatchType3{left:238px}
+#divMatchType5{position:absolute;top:28px;left:7px;z-index:8;visibility:hidden;width:116px;height:210px}
+divMatchType5
+#LeagueDiv .bts{clear:both;display:block;padding:8px 0 8px 11px;text-align:center}
+#LeagueDiv .bts input,.vsbtn{margin:0 6px;border:1px solid #aec6ec;background-color:#e2f5fa;color:#06c;font-weight:700;line-height:18px;cursor:pointer}
+#league { max-height:400px;overflow:auto}
+.cc a{float:right;display:block;margin-top:1px;width:15px;height:13px;background-image:url(/images/cc.gif)}
+.sotit{margin-bottom:6px;padding:2px 6px 0;height:18px;background-color:#f5f4ef;line-height:18px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#e1e1e1}
+#bottom{margin:0 auto;padding:10px;width:930px;border-top:1px solid #dfdfdf;text-align:center}
+#bottom,.ts1{background-color:#fff}
+.ts1,.ts2{line-height:21px}
+.ts2{background-color:#f4f8ff}
+.stool{height:29px;border-top:1px solid #ccc;border-right:1px solid #ccc;border-bottom:3px solid #669;border-left:1px solid #ccc;background-image:url(/images/ty_bg.jpg);line-height:29px}
+.stool li{float:left;background-image:url(/images/t_line.jpg);background-position:right;background-repeat:no-repeat}
+.stool li a,.stool li a:visited{display:block;padding-right:20px;padding-left:20px;color:#390}
+.stool li a:hover{background-image:url(/images/ty_bg2.gif);color:#f60;text-decoration:none}
+.stool .t_on a,.stool .t_on a:hover,.stool .t_on a:visited{border-right:1px solid #ccc;background-image:url(/images/t_ons.gif);color:#930;font-weight:700}
+#morecompany{position:absolute;top:56px;left:603px;padding-right:1px;padding-left:1px;width:78px;border:2px solid #72a5de;background-color:#def1fa;background-color:#ebf7fc}
+#morecompany li,#morecompany li a{float:left;clear:both}
+#morecompany li a{display:block;padding-left:18px;width:60px;height:23px;border-bottom:1px solid #c2d9e7;color:#3c5eac;text-decoration:none;line-height:23px}
+#morecompany .selected,#morecompany li a:hover{background-color:#84a5e1;color:#fff;text-decoration:none}
+.newsmenu{clear:both;width:942px;height:2pc;background-image:url(/images/kl.gif);background-position:top;background-repeat:repeat-x}
+.newsmenu li{float:left;line-height:2pc}
+.newsmenu li a,.newsmenu li a:visited{float:left;display:block;padding:0px 15px; height:2pc;background-image:url(/images/kl.gif);background-position:right bottom;background-repeat:no-repeat;color:#fff;text-align:center}
+.newsmenu li a:hover{color:#d5eff4;text-decoration:none}
+.newsmenu .uu_on a,.newsmenu .uu_on a:hover,.newsmenu .uu_on a:visited{background-image:url(/images/kl2.gif);background-repeat:repeat-x;color:#fff;font-weight:700}
+.newsmenu .rsbtns a,.newsmenu .rsbtns a:hover,.newsmenu .rsbtns a:visited{display:block;padding-right:1px;padding-bottom:1px;width:77px;height:20px;background-image:url(/images/rbtn.png);background-repeat:no-repeat;color:#476392;font-size:9pt;line-height:20px}
+#Ad_1,#Ad_2{padding-bottom:4px}
+.tool_g3{float:left;display:block;width:200px;height:22px}
+a.sortby{background:url(images/sabtn.gif) left top;height:22px;width:77px;line-height:22px;margin-left:10px;display:block;float:left;text-align:center;color:#000;text-decoration:none}
+.tool_g3 a.sortby:hover,.tool_g3 a.sortbySelect:hover{background:url(images/sabtn.gif) left -22px;text-decoration:none;color:#fff}
+.tool_g3 a.sortbySelect,.tool_g3 a.sortbySelect:visited{background:url(images/sabtn.gif) left -22px;height:22px;width:77px;line-height:22px;margin-left:10px;display:block;float:left;color:#fff;text-align:center}
+.tabs{border-radius:.3125em}
+.tabs .btn:first-child{margin-left:0;-webkit-border-top-left-radius:4px;-moz-border-radius-topleft:4px;border-top-left-radius:4px;-webkit-border-bottom-left-radius:4px;-moz-border-radius-bottomleft:4px;border-bottom-left-radius:4px;line-height:26px}
+.tabs .btn:last-child{-webkit-border-top-right-radius:4px;-moz-border-radius-topright:4px;border-top-right-radius:4px;-webkit-border-bottom-right-radius:4px;-moz-border-radius-bottomright:4px;border-bottom-right-radius:4px}
+.tabs .btn{cursor:pointer;line-height:26px;height:26px;overflow:hidden;padding:4px;border:1px solid #3473c7;background:#F2FBFF;white-space:nowrap}
+.tabs .btn:hover{color:red}
+.tabs .btn.on{background:#3473c7;color:#FFF}

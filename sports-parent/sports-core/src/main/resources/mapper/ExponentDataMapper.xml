@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sports.core.mapper.ExponentDataMapper">
+
+	<resultMap id="ExponentMap" type="org.sports.core.model.ExponentData">
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<id column="time" property="time"/>
+		<id column="data" property="data"/>
+	</resultMap>
+
+	<select id="selectById" parameterType="java.lang.Integer" resultMap="ExponentMap">
+		select `id`, `time`, `data` from exponent_data where id = #{id}
+	</select>
+
+	<select id="selectAll" resultMap="ExponentMap">
+		select `id`, `time`, `data` from exponent_data
+	</select>
+
+	<insert id="insert" keyProperty="entity.id" useGeneratedKeys="true">
+		insert into exponent_data (`time`, `data`)
+		values
+		(#{entity.time}, #{entity.data})
+	</insert>
+
+	<insert id="insertByBatch" keyProperty="id" useGeneratedKeys="true">
+		insert into exponent_data (`time`, `data`)
+		values
+		<foreach collection="list" item="item" index="index" separator=",">
+			(#{item.time}, #{item.data})
+		</foreach>
+	</insert>
+
+	<update id="truncateTable">
+		truncate table exponent_data
+	</update>
+
+
+</mapper>
