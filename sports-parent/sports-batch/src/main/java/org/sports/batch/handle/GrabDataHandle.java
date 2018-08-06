@@ -35,6 +35,10 @@ public class GrabDataHandle {
     static Map<String,OddsAsian> odds1Map = new HashMap<String,OddsAsian>();
     static Map<String,Odds1x2> odds2Map = new HashMap<String,Odds1x2>();
     static Map<String,OddsOU> odds3Map = new HashMap<String,OddsOU>();
+    
+    
+    static  List<FootballIndex> list = new ArrayList<>();
+    static List<ExponentData> avgList = new ArrayList<ExponentData>();
 
     static String[] company = new String[]{"足彩","澳彩","波音","Crown","立博","云鼎",
             "SNAI","Bet365","威廉","易胜博","韦德","SSP","明陞", "Eurobet", "Interwetten", "10Bet",
@@ -80,8 +84,6 @@ public class GrabDataHandle {
         String[] matchDomain = domains[1].split(SplitConstant.splitRecord);
         //matchdata.MatchNum = 0;
 
-        List<FootballIndex> list = new ArrayList<>();
-        List<ExponentData> avgList = new ArrayList<ExponentData>();
         FootballIndex football = null;
         ExponentData exponent = null;
         
@@ -183,6 +185,8 @@ public class GrabDataHandle {
     	odds1Map.clear();
     	odds2Map.clear();
     	odds3Map.clear();
+    	avgList.clear();
+    	list.clear();
     }
     
 }
