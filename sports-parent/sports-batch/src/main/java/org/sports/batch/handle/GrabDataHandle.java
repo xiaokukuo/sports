@@ -173,7 +173,16 @@ public class GrabDataHandle {
         indexService.truncateTable();
         indexService.save(list);
         exponentDataService.save(avgList);
+        this.clear();
     }
     
 
+    private void clear(){
+    	leagueMap.clear();
+    	matchMap.clear();
+    	odds1Map.clear();
+    	odds2Map.clear();
+    	odds3Map.clear();
+    }
+    
 }

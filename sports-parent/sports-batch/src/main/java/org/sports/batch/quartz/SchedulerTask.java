@@ -36,7 +36,7 @@ public class SchedulerTask {
 		task.setId(111);
 		task.setTaskName("365");
 		task.setTaskGroup("group1");
-		task.setCron("0 0/5 * * * ?");
+		task.setCron("0 0/2 * * * ?");
 		task.setClassName("com.sport.bet.quartz.job.GrabBet365Job");
 		task.setTaskType("Y");
 		taskInfos.add(task);

@@ -39,5 +39,4 @@
 		truncate table exponent_data
 	</update>
 
-
 </mapper>

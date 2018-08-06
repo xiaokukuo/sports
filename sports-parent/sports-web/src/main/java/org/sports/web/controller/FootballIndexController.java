@@ -23,7 +23,7 @@ public class FootballIndexController {
 	@RequestMapping("/data")
 	@ResponseBody
 	public List<ExponentData> getdata() {
-		return exponentDataService.findAll();
+		return exponentDataService.findByIndexId("1580334476");
 	}
 
 }
