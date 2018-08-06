@@ -13,14 +13,17 @@ CREATE TABLE `batch_task_info` (
 
 CREATE TABLE `exponent_data` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `index_id` varchar(30) NOT NULL,
   `time` varchar(20) NOT NULL,
   `data` double NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `index_name` (`index_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 CREATE TABLE `football_index` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `index_id` varchar(30) NOT NULL,
   `league_name` varchar(20) NOT NULL,
   `start_date` varchar(20) DEFAULT NULL,
   `start_time` varchar(20) NOT NULL,
@@ -54,5 +57,6 @@ CREATE TABLE `football_index` (
   `web_goal5` varchar(16) DEFAULT NULL,
   `over5` double DEFAULT NULL,
   `under5` double DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `index_name` (`index_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
