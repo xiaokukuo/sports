@@ -4,6 +4,8 @@ public class FootballIndex {
 
     private int id;
 
+    private String indexId;
+    
     private String leagueName;
 
     private String startTime;
@@ -57,7 +59,16 @@ public class FootballIndex {
         this.id = id;
     }
 
-    public String getLeagueName() {
+    
+    public String getIndexId() {
+		return indexId;
+	}
+
+	public void setIndexId(String indexId) {
+		this.indexId = indexId;
+	}
+
+	public String getLeagueName() {
         return leagueName;
     }
 

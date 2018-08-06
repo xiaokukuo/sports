@@ -4,29 +4,30 @@
 
 	<resultMap id="ExponentMap" type="org.sports.core.model.ExponentData">
 		<id column="id" property="id" jdbcType="INTEGER" />
+		<id column="index_id" property="indexId"/>
 		<id column="time" property="time"/>
 		<id column="data" property="data"/>
 	</resultMap>
 
 	<select id="selectById" parameterType="java.lang.Integer" resultMap="ExponentMap">
-		select `id`, `time`, `data` from exponent_data where id = #{id}
+		select `id`, `index_id`, `time`, `data` from exponent_data where id = #{id}
 	</select>
 
 	<select id="selectAll" resultMap="ExponentMap">
-		select `id`, `time`, `data` from exponent_data
+		select `id`, `index_id`, `time`, `data` from exponent_data
 	</select>
 
 	<insert id="insert" keyProperty="entity.id" useGeneratedKeys="true">
-		insert into exponent_data (`time`, `data`)
+		insert into exponent_data (`index_id`, `time`, `data`)
 		values
-		(#{entity.time}, #{entity.data})
+		(#{item.indexId}, #{entity.time}, #{entity.data})
 	</insert>
 
 	<insert id="insertByBatch" keyProperty="id" useGeneratedKeys="true">
-		insert into exponent_data (`time`, `data`)
+		insert into exponent_data (`index_id`, `time`, `data`)
 		values
 		<foreach collection="list" item="item" index="index" separator=",">
-			(#{item.time}, #{item.data})
+			(#{item.indexId}, #{item.time}, #{item.data})
 		</foreach>
 	</insert>
 

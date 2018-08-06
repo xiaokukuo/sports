@@ -4,6 +4,7 @@
 
 	<resultMap id="FootballMap" type="org.sports.core.model.FootballIndex">
 		<id column="id" property="id" jdbcType="INTEGER" />
+		<id column="index_id" property="indexId"/>
 		<id column="league_name" property="leagueName"/>
 		<id column="start_time" property="startTime"/>
 		<id column="end_time" property="endTime"/>
@@ -61,14 +62,14 @@
 
 	<insert id="insert" keyProperty="entity.id" useGeneratedKeys="true">
 		insert into football_index
-		(`league_name`, `start_time`, `end_time`, `start_date`, `team_name1`, `score1`, `team_name2`, `score2`,
+		(`index_id`, `league_name`, `start_time`, `end_time`, `start_date`, `team_name1`, `score1`, `team_name2`, `score2`,
 		`web1`, `zoudi1`, `web_goal1`, `over1`, `under1`,
 		`web2`, `zoudi2`, `web_goal2`, `over2`, `under2`,
 		`web3`, `zoudi3`, `web_goal3`, `over3`, `under3`,
 		`web4`, `zoudi4`, `web_goal4`, `over4`, `under4`,
 		`web5`, `zoudi5`, `web_goal5`, `over5`, `under5`)
 		values
-		(#{entity.leagueName}, #{entity.startTime}, #{entity.endTime}, #{entity.startDate},
+	   (#{entity.indexId}, #{entity.leagueName}, #{entity.startTime}, #{entity.endTime}, #{entity.startDate},
 		#{entity.teamName1}, #{entity.score1}, #{entity.teamName2}, #{entity.score2},
 		#{entity.web1}, #{entity.zoudi1}, #{entity.webGoal1}, #{entity.over1}, #{entity.under1},
 		#{entity.web2}, #{entity.zoudi2}, #{entity.webGoal2}, #{entity.over2}, #{entity.under2},
@@ -79,7 +80,7 @@
 
 	<insert id="insertByBatch" keyProperty="id" useGeneratedKeys="true">
 		insert into football_index
-		(`league_name`, `start_time`, `end_time`, `start_date`, `team_name1`, `score1`, `team_name2`, `score2`,
+		(`index_id`, `league_name`, `start_time`, `end_time`, `start_date`, `team_name1`, `score1`, `team_name2`, `score2`,
 		`web1`, `zoudi1`, `web_goal1`, `over1`, `under1`,
 		`web2`, `zoudi2`, `web_goal2`, `over2`, `under2`,
 		`web3`, `zoudi3`, `web_goal3`, `over3`, `under3`,
@@ -87,7 +88,7 @@
 		`web5`, `zoudi5`, `web_goal5`, `over5`, `under5`)
 		values
 		<foreach collection="list" item="item" index="index" separator=",">
-			(#{item.leagueName}, #{item.startTime}, #{item.endTime}, #{item.startDate},
+			(#{item.indexId}, #{item.leagueName}, #{item.startTime}, #{item.endTime}, #{item.startDate},
 			#{item.teamName1}, #{item.score1}, #{item.teamName2}, #{item.score2},
 			#{item.web1}, #{item.zoudi1}, #{item.webGoal1}, #{item.over1}, #{item.under1},
 			#{item.web2}, #{item.zoudi2}, #{item.webGoal2}, #{item.over2}, #{item.under2},

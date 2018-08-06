@@ -1,5 +1,6 @@
 package org.sports.batch.handle;
 
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -12,7 +13,9 @@ import org.sports.batch.po.MatchGame;
 import org.sports.batch.po.Odds1x2;
 import org.sports.batch.po.OddsAsian;
 import org.sports.batch.po.OddsOU;
+import org.sports.core.model.ExponentData;
 import org.sports.core.model.FootballIndex;
+import org.sports.core.service.ExponentDataService;
 import org.sports.core.service.FootballIndexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -22,6 +25,9 @@ public class GrabDataHandle {
 
     @Autowired
     private FootballIndexService indexService;
+    
+    @Autowired
+    private ExponentDataService exponentDataService;
 
     public static Map<String,League> leagueMap = new HashMap<String,League>();
     public static Map<String,MatchGame> matchMap = new HashMap<String,MatchGame>();
@@ -75,15 +81,18 @@ public class GrabDataHandle {
         //matchdata.MatchNum = 0;
 
         List<FootballIndex> list = new ArrayList<>();
+        List<ExponentData> avgList = new ArrayList<ExponentData>();
         FootballIndex football = null;
+        ExponentData exponent = null;
+        
         for (int i = 0; i < matchDomain.length; i++) {
             football = new FootballIndex();
 
             matchItem = new MatchGame(matchDomain[i]);
             leagueItem = leagueMap.get(matchItem.getlId());
-
+            
+            football.setIndexId(matchItem.getmId()+leagueItem.getLid());
             football.setLeagueName(leagueItem.getCnName());
-
             football.setStartTime(matchItem.getTime());
             football.setEndTime(matchItem.getTime2());
             football.setTeamName1(matchItem.getT1CnName());
@@ -91,7 +100,8 @@ public class GrabDataHandle {
             football.setTeamName2(matchItem.getT2CnName());
             football.setScore2(matchItem.getGuestScore());
 
-
+            double sum = 0;
+            int count = 0;
             for (int j = 0; j < SelCompany.length; j++) {
                 switch (j){
                     case 0:
@@ -114,6 +124,10 @@ public class GrabDataHandle {
                 if(odds3 == null){
                     continue;
                 }
+                
+                
+                sum = sum + Double.parseDouble(odds3.getOver());
+                count++;
                 //odds1 = odds1Map.get(matchItem.getmId() + "_" + SelCompany[j]);// 让球
                 switch (j){
                     case 0:
@@ -144,13 +158,20 @@ public class GrabDataHandle {
                         break;
                 }
             }
-
+            exponent = new ExponentData();
+            sum = sum/count;
+            exponent.setIndexId(football.getIndexId());
+            exponent.setTime(LocalTime.now().withSecond(0).withNano(0).toString());
+            
+            exponent.setData(sum);
+            
             list.add(football);
-
+            avgList.add(exponent);
         }
 
         indexService.save(list);
-        System.out.println("sdf");
+        exponentDataService.save(avgList);
     }
+    
 
 }

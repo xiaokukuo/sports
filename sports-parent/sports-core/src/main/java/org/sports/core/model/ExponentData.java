@@ -3,6 +3,8 @@ package org.sports.core.model;
 public class ExponentData {
 
     private int id;
+    
+    private String indexId;
 
     private String time;
 
@@ -16,7 +18,15 @@ public class ExponentData {
         this.id = id;
     }
 
-    public String getTime() {
+	public String getIndexId() {
+		return indexId;
+	}
+
+	public void setIndexId(String indexId) {
+		this.indexId = indexId;
+	}
+
+	public String getTime() {
         return time;
     }
 
