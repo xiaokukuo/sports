@@ -1,0 +1,169 @@
+2018-08-06 14:58:18.959 [INFO ] [org.springframework.boot.StartupInfoLogger:50] - Starting BatchApplication on DESKTOP-QCS4UDO with PID 14380 (F:\sprotwork\git\sports\sports-parent\sports-batch\target\classes started by Yao in F:\sprotwork\git\sports\sports-parent\sports-batch)
+2018-08-06 14:58:18.965 [INFO ] [org.springframework.boot.SpringApplication:662] - No active profile set, falling back to default profiles: default
+2018-08-06 14:58:52.180 [INFO ] [org.springframework.boot.StartupInfoLogger:50] - Starting BatchApplication on DESKTOP-QCS4UDO with PID 5640 (F:\sprotwork\git\sports\sports-parent\sports-batch\target\classes started by Yao in F:\sprotwork\git\sports\sports-parent\sports-batch)
+2018-08-06 14:58:52.184 [INFO ] [org.springframework.boot.SpringApplication:662] - No active profile set, falling back to default profiles: default
+2018-08-06 14:58:55.843 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8081"]
+2018-08-06 14:58:55.869 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-06 14:58:55.870 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-06 14:58:55.887 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\ProgramFiles\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin/server;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin;D:/ProgramFiles/Java/jdk1.8/bin/../jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\ProgramFiles\Java\jdk1.8\bin;D:\ProgramFiles\Java\jdk1.8\jre\bin;D:\ProgramFiles\TortoiseSVN\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Ruby23-x64\bin;C:\Users\yaoya\AppData\Local\Microsoft\WindowsApps;C:\Users\yaoya\AppData\Roaming\npm;%M2_HOME%\bin;D:\ProgramFiles\gradle-4.9\bin;;C:\WINDOWS\System32;;.]
+2018-08-06 14:58:56.144 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-06 14:58:56.144 [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 3827 ms
+2018-08-06 14:58:57.084 [INFO ] [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-06 14:58:57.486 [INFO ] [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-06 14:58:57.830 [INFO ] [org.quartz.impl.StdSchedulerFactory:1208] - Using default implementation for ThreadExecutor
+2018-08-06 14:58:57.869 [INFO ] [org.quartz.core.SchedulerSignalerImpl:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-08-06 14:58:57.870 [INFO ] [org.quartz.core.QuartzScheduler:229] - Quartz Scheduler v.2.3.0 created.
+2018-08-06 14:58:57.872 [INFO ] [org.quartz.simpl.RAMJobStore:155] - RAMJobStore initialized.
+2018-08-06 14:58:57.873 [INFO ] [org.quartz.core.QuartzScheduler:294] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'schedulerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-08-06 14:58:57.876 [INFO ] [org.quartz.impl.StdSchedulerFactory:1362] - Quartz scheduler 'schedulerFactory' initialized from an externally provided properties instance.
+2018-08-06 14:58:57.877 [INFO ] [org.quartz.impl.StdSchedulerFactory:1366] - Quartz scheduler version: 2.3.0
+2018-08-06 14:58:57.880 [INFO ] [org.quartz.core.QuartzScheduler:2287] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@28d79cba
+2018-08-06 14:58:58.142 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 14:58:58.607 [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3aefe5e5: startup date [Mon Aug 06 14:58:52 CST 2018]; root of context hierarchy
+2018-08-06 14:58:58.831 [INFO ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-06 14:58:58.833 [INFO ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-06 14:58:58.902 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 14:58:58.904 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 14:58:59.554 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8081"]
+2018-08-06 14:58:59.585 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-06 14:58:59.666 [INFO ] [org.springframework.boot.StartupInfoLogger:59] - Started BatchApplication in 8.106 seconds (JVM running for 8.952)
+2018-08-06 14:59:01.536 [INFO ] [org.quartz.core.QuartzScheduler:547] - Scheduler schedulerFactory_$_NON_CLUSTERED started.
+2018-08-06 15:04:37.152 [INFO ] [org.springframework.boot.StartupInfoLogger:50] - Starting BatchApplication on DESKTOP-QCS4UDO with PID 10964 (F:\sprotwork\git\sports\sports-parent\sports-batch\target\classes started by Yao in F:\sprotwork\git\sports\sports-parent\sports-batch)
+2018-08-06 15:04:37.154 [INFO ] [org.springframework.boot.SpringApplication:662] - No active profile set, falling back to default profiles: default
+2018-08-06 15:04:40.748 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8081"]
+2018-08-06 15:04:40.796 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-06 15:04:40.797 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-06 15:04:40.821 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\ProgramFiles\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin/server;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin;D:/ProgramFiles/Java/jdk1.8/bin/../jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\ProgramFiles\Java\jdk1.8\bin;D:\ProgramFiles\Java\jdk1.8\jre\bin;D:\ProgramFiles\TortoiseSVN\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Ruby23-x64\bin;C:\Users\yaoya\AppData\Local\Microsoft\WindowsApps;C:\Users\yaoya\AppData\Roaming\npm;%M2_HOME%\bin;D:\ProgramFiles\gradle-4.9\bin;;C:\WINDOWS\System32;;.]
+2018-08-06 15:04:41.069 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-06 15:04:41.070 [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 3739 ms
+2018-08-06 15:04:42.011 [INFO ] [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-06 15:04:42.380 [INFO ] [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-06 15:04:42.582 [INFO ] [org.quartz.impl.StdSchedulerFactory:1208] - Using default implementation for ThreadExecutor
+2018-08-06 15:04:42.655 [INFO ] [org.quartz.core.SchedulerSignalerImpl:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-08-06 15:04:42.655 [INFO ] [org.quartz.core.QuartzScheduler:229] - Quartz Scheduler v.2.3.0 created.
+2018-08-06 15:04:42.657 [INFO ] [org.quartz.simpl.RAMJobStore:155] - RAMJobStore initialized.
+2018-08-06 15:04:42.659 [INFO ] [org.quartz.core.QuartzScheduler:294] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'schedulerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-08-06 15:04:42.660 [INFO ] [org.quartz.impl.StdSchedulerFactory:1362] - Quartz scheduler 'schedulerFactory' initialized from an externally provided properties instance.
+2018-08-06 15:04:42.660 [INFO ] [org.quartz.impl.StdSchedulerFactory:1366] - Quartz scheduler version: 2.3.0
+2018-08-06 15:04:42.667 [INFO ] [org.quartz.core.QuartzScheduler:2287] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2b8d084
+2018-08-06 15:04:42.870 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:04:43.241 [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2473d930: startup date [Mon Aug 06 15:04:37 CST 2018]; root of context hierarchy
+2018-08-06 15:04:43.407 [INFO ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-06 15:04:43.409 [INFO ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-06 15:04:43.468 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:04:43.468 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:04:44.104 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8081"]
+2018-08-06 15:04:44.131 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-06 15:04:44.243 [INFO ] [org.springframework.boot.StartupInfoLogger:59] - Started BatchApplication in 7.69 seconds (JVM running for 8.513)
+2018-08-06 15:04:46.086 [INFO ] [org.quartz.core.QuartzScheduler:547] - Scheduler schedulerFactory_$_NON_CLUSTERED started.
+2018-08-06 15:06:00.004 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:08:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:10:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:12:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:14:00.003 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:14:22.695 [INFO ] [org.springframework.boot.StartupInfoLogger:50] - Starting BatchApplication on DESKTOP-QCS4UDO with PID 13448 (F:\sprotwork\git\sports\sports-parent\sports-batch\target\classes started by Yao in F:\sprotwork\git\sports\sports-parent\sports-batch)
+2018-08-06 15:14:22.703 [INFO ] [org.springframework.boot.SpringApplication:662] - No active profile set, falling back to default profiles: default
+2018-08-06 15:14:26.262 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8081"]
+2018-08-06 15:14:26.287 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-06 15:14:26.288 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-06 15:14:26.304 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\ProgramFiles\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin/server;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin;D:/ProgramFiles/Java/jdk1.8/bin/../jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\ProgramFiles\Java\jdk1.8\bin;D:\ProgramFiles\Java\jdk1.8\jre\bin;D:\ProgramFiles\TortoiseSVN\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Ruby23-x64\bin;C:\Users\yaoya\AppData\Local\Microsoft\WindowsApps;C:\Users\yaoya\AppData\Roaming\npm;%M2_HOME%\bin;D:\ProgramFiles\gradle-4.9\bin;;C:\WINDOWS\System32;;.]
+2018-08-06 15:14:26.542 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-06 15:14:26.543 [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 3699 ms
+2018-08-06 15:14:27.520 [INFO ] [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-06 15:14:27.954 [INFO ] [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-06 15:14:28.112 [INFO ] [org.quartz.impl.StdSchedulerFactory:1208] - Using default implementation for ThreadExecutor
+2018-08-06 15:14:28.159 [INFO ] [org.quartz.core.SchedulerSignalerImpl:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-08-06 15:14:28.160 [INFO ] [org.quartz.core.QuartzScheduler:229] - Quartz Scheduler v.2.3.0 created.
+2018-08-06 15:14:28.183 [INFO ] [org.quartz.simpl.RAMJobStore:155] - RAMJobStore initialized.
+2018-08-06 15:14:28.185 [INFO ] [org.quartz.core.QuartzScheduler:294] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'schedulerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-08-06 15:14:28.185 [INFO ] [org.quartz.impl.StdSchedulerFactory:1362] - Quartz scheduler 'schedulerFactory' initialized from an externally provided properties instance.
+2018-08-06 15:14:28.186 [INFO ] [org.quartz.impl.StdSchedulerFactory:1366] - Quartz scheduler version: 2.3.0
+2018-08-06 15:14:28.189 [INFO ] [org.quartz.core.QuartzScheduler:2287] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2c16fadb
+2018-08-06 15:14:28.374 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:14:28.730 [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ddced80: startup date [Mon Aug 06 15:14:22 CST 2018]; root of context hierarchy
+2018-08-06 15:14:28.886 [INFO ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-06 15:14:28.888 [INFO ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-06 15:14:28.998 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:14:28.999 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:14:29.718 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8081"]
+2018-08-06 15:14:29.741 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-06 15:14:29.798 [INFO ] [org.springframework.boot.StartupInfoLogger:59] - Started BatchApplication in 7.711 seconds (JVM running for 8.535)
+2018-08-06 15:14:31.699 [INFO ] [org.quartz.core.QuartzScheduler:547] - Scheduler schedulerFactory_$_NON_CLUSTERED started.
+2018-08-06 15:15:00.004 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:16:00.003 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:17:00.005 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:18:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:19:00.003 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:20:00.003 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:21:00.004 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:22:00.004 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:23:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:24:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:25:00.005 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:26:00.004 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:27:00.001 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:28:00.003 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:29:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:30:00.003 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:31:00.001 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:32:00.003 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:33:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:34:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:35:00.002 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:36:00.008 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:37:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:38:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:39:00.001 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:40:00.003 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:41:00.009 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:42:00.002 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:43:00.004 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:44:00.005 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:45:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:46:00.009 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:47:00.002 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:48:00.003 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:49:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:50:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:51:00.004 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:52:00.003 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:53:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:54:00.009 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:55:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-06 15:55:00.270 [ERROR] [org.quartz.core.JobRunShell:211] - Job group1.365 threw an unhandled Exception: 
+java.lang.NullPointerException: null
+	at org.sports.batch.handle.GrabDataHandle.grab(GrabDataHandle.java:50) ~[classes/:na]
+	at org.sports.batch.quartz.job.GrabDataJob.execute(GrabDataJob.java:21) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.0.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.0.jar:na]
+2018-08-06 15:55:00.271 [ERROR] [org.quartz.core.ErrorLogger:2401] - Job (group1.365 threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213) ~[quartz-2.3.0.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.0.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at org.sports.batch.handle.GrabDataHandle.grab(GrabDataHandle.java:50) ~[classes/:na]
+	at org.sports.batch.quartz.job.GrabDataJob.execute(GrabDataJob.java:21) ~[classes/:na]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) ~[quartz-2.3.0.jar:na]
+	... 1 common frames omitted
+2018-08-06 15:56:00.003 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob

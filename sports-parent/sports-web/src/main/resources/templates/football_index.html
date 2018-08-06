@@ -33,52 +33,55 @@
 						<tr class="stit" style="line-height:22px;">
 							<td width="11%" colspan="2">联赛</td><td>对阵</td><td width="6%">时</td><td width="6%">比分</td><td width="10%">澳彩</td><td width="10%">易胜博</td><td width="10%">Bet365</td><td width="10%">Crown</td><td width="10%">12bet</td>
 						</tr>
-						<tr th:each="football,iterStat:${indexList}">
+					
+						<tr th:each="football,iterStat:${indexList}" style="background-color:white" align="center" height="15" id="tr_1592658" index="0">
 							<td></td>
-							<td th:text="${football.leagueName}">Onions</td>
-							<td th:text="${football.leagueName}">Onions</td>
-							<td th:text="${football.leagueName}">Onions</td>
-							<td th:text="${football.leagueName}">Onions</td>
-							<td th:text="${football.leagueName}">Onions</td>
-							<td th:text="${football.leagueName}">Onions</td>
-						</tr>
-						<!-- <tr style="background-color:white" align="center" height="15" id="tr_1592658" index="0">
-							<td></td>
-							<td width="11%" bgcolor="#8e9cdf">
-								<font color="#ffffff">中后赛<br>
-									<span id="t_1592658">8-6 16:00</span>
-								</font>
+							<td th:attr="id=${football.indexId}" width="11%" bgcolor="#8e9cdf" >
+								<font color="#ffffff"  th:text="${football.leagueName}"></font><br>
+								<span th:text="${football.startTime}"></span>
 							</td>
 							<td style="text-align:left;">
-								<div id="home_1592658">&nbsp;
-									<a href="javascript:TeamPanlu_10(1592658)">河北华夏幸福后备队</a>
+								<div>&nbsp;
+									<a th:text="${football.teamName1}"></a>
 								</div> &nbsp;
 								<br>
 								<div id="guest_1592658">&nbsp;
-									<a href="javascript:TeamPanlu_10(1592658)">天津泰达后备队</a>
+									<a th:text="${football.teamName2}"></a>
 								</div>
 							</td>
 							<td onclick="showdetail(1592658);">
 								<span id="time_1592658">69<img src="images/in.gif" border="0"></span>
 							</td>
 							<td>
-								<span id="hs_1592658" class="score">1</span><br><br>
-								<span id="gs_1592658" class="score">1</span>
-							</td>
-							<td style="text-align:center;" index="0"></td>
-							<td style="text-align:center;" index="0">
-								<a class="sb">1.14</a><br>
-								<a class="pk">3</a><br>
-								<a>0.69</a>
+								<span id="hs_1592658" class="score" th:text="${football.score1}">1</span><br><br>
+								<span id="gs_1592658" class="score" th:text="${football.score2}">1</span>
 							</td>
 							<td style="text-align:center;" index="0">
-								<a class="sb">0.70</a><br>
-								<a class="pk">2.5/3</a><br>
-								<a>1.10</a>
+								<a class="sb" th:text="${football.over1}"></a><br>
+								<a class="pk" th:text="${football.webGoal1}"></a><br>
+								<a th:text="${football.under1}"></a>
 							</td>
-							<td style="text-align:center;" index="0"></td>
-							<td style="text-align:center;" index="0"></td>
-						</tr> -->
+							<td style="text-align:center;" index="0">
+								<a class="sb" th:text="${football.over2}"></a><br>
+								<a class="pk" th:text="${football.webGoal2}"></a><br>
+								<a th:text="${football.under2}"></a>
+							</td>
+							<td style="text-align:center;" index="0">
+								<a class="sb" th:text="${football.over3}"></a><br>
+								<a class="pk" th:text="${football.webGoal3}"></a><br>
+								<a th:text="${football.under3}"></a>
+							</td>
+							<td style="text-align:center;" index="0">
+								<a class="sb" th:text="${football.over4}"></a><br>
+								<a class="pk" th:text="${football.webGoal4}"></a><br>
+								<a th:text="${football.under4}"></a>
+							</td>
+							<td style="text-align:center;" index="0">
+								<a class="sb" th:text="${football.over5}"></a><br>
+								<a class="pk" th:text="${football.webGoal5}"></a><br>
+								<a th:text="${football.under5}"></a>
+							</td>
+						</tr> 
 					</tbody>
 				</table>
 			</div>

@@ -36,7 +36,7 @@ public class SchedulerTask {
 		task.setId(111);
 		task.setTaskName("365");
 		task.setTaskGroup("group1");
-		task.setCron("0 0/2 * * * ?");
+		task.setCron("0 0/1 * * * ?");
 		task.setClassName("org.sports.batch.quartz.job.GrabDataJob");
 		task.setTaskType("Y");
 		taskInfos.add(task);
@@ -44,7 +44,6 @@ public class SchedulerTask {
 	
 	public void execute() throws JobExecutionException, Exception {
 		
-		System.err.println("任务启动");
 		Scheduler scheduler = schedulerFactory.getScheduler();
 		
 		for (BatchTaskInfo taskInfo : taskInfos) {

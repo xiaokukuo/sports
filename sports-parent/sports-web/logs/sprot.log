@@ -1,0 +1,730 @@
+2018-08-06 15:06:29.834 [INFO ] [org.springframework.boot.StartupInfoLogger:50] - Starting WebApplication on DESKTOP-QCS4UDO with PID 5632 (F:\sprotwork\git\sports\sports-parent\sports-web\target\classes started by Yao in F:\sprotwork\git\sports\sports-parent\sports-web)
+2018-08-06 15:06:29.839 [INFO ] [org.springframework.boot.SpringApplication:662] - No active profile set, falling back to default profiles: default
+2018-08-06 15:06:33.237 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8082"]
+2018-08-06 15:06:33.260 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-06 15:06:33.261 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-06 15:06:33.275 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\ProgramFiles\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin/server;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin;D:/ProgramFiles/Java/jdk1.8/bin/../jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\ProgramFiles\Java\jdk1.8\bin;D:\ProgramFiles\Java\jdk1.8\jre\bin;D:\ProgramFiles\TortoiseSVN\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Ruby23-x64\bin;C:\Users\yaoya\AppData\Local\Microsoft\WindowsApps;C:\Users\yaoya\AppData\Roaming\npm;%M2_HOME%\bin;D:\ProgramFiles\gradle-4.9\bin;;C:\WINDOWS\System32;;.]
+2018-08-06 15:06:33.579 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-06 15:06:33.580 [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 3594 ms
+2018-08-06 15:06:34.542 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:06:34.942 [INFO ] [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@47d90b9e: startup date [Mon Aug 06 15:06:29 CST 2018]; root of context hierarchy
+2018-08-06 15:06:35.105 [INFO ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/hello]}" onto public java.lang.String org.sports.web.controller.FootballIndexController.hello()
+2018-08-06 15:06:35.106 [INFO ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/data]}" onto public java.util.List<org.sports.core.model.ExponentData> org.sports.web.controller.FootballIndexController.getdata()
+2018-08-06 15:06:35.114 [INFO ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-06 15:06:35.115 [INFO ] [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-06 15:06:35.171 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:06:35.173 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:06:35.868 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8082"]
+2018-08-06 15:06:35.894 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-06 15:06:35.959 [INFO ] [org.springframework.boot.StartupInfoLogger:59] - Started WebApplication in 6.755 seconds (JVM running for 7.561)
+2018-08-06 15:06:43.596 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-06 15:06:43.597 [INFO ] [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-06 15:06:43.656 [INFO ] [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 59 ms
+2018-08-06 15:06:46.947 [INFO ] [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-06 15:06:47.261 [INFO ] [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-06 15:52:03.730 [INFO ] [org.springframework.boot.StartupInfoLogger:50] - Starting WebApplication on DESKTOP-QCS4UDO with PID 8972 (F:\sprotwork\git\sports\sports-parent\sports-web\target\classes started by Yao in F:\sprotwork\git\sports\sports-parent\sports-web)
+2018-08-06 15:52:03.736 [INFO ] [org.springframework.boot.SpringApplication:662] - No active profile set, falling back to default profiles: default
+2018-08-06 15:52:07.157 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8082"]
+2018-08-06 15:52:07.185 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-06 15:52:07.186 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-06 15:52:07.204 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\ProgramFiles\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin/server;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin;D:/ProgramFiles/Java/jdk1.8/bin/../jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\ProgramFiles\Java\jdk1.8\bin;D:\ProgramFiles\Java\jdk1.8\jre\bin;D:\ProgramFiles\TortoiseSVN\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Ruby23-x64\bin;C:\Users\yaoya\AppData\Local\Microsoft\WindowsApps;C:\Users\yaoya\AppData\Roaming\npm;%M2_HOME%\bin;D:\ProgramFiles\gradle-4.9\bin;;C:\WINDOWS\System32;;.]
+2018-08-06 15:52:07.408 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-06 15:52:08.562 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:52:09.240 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:52:09.246 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:52:09.951 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8082"]
+2018-08-06 15:52:09.980 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-06 15:52:10.030 [INFO ] [org.springframework.boot.StartupInfoLogger:59] - Started WebApplication in 6.906 seconds (JVM running for 7.841)
+2018-08-06 15:58:43.679 [INFO ] [org.springframework.boot.StartupInfoLogger:50] - Starting WebApplication on DESKTOP-QCS4UDO with PID 11276 (F:\sprotwork\git\sports\sports-parent\sports-web\target\classes started by Yao in F:\sprotwork\git\sports\sports-parent\sports-web)
+2018-08-06 15:58:43.687 [INFO ] [org.springframework.boot.SpringApplication:662] - No active profile set, falling back to default profiles: default
+2018-08-06 15:58:47.859 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8082"]
+2018-08-06 15:58:47.896 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-06 15:58:47.897 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-06 15:58:47.919 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\ProgramFiles\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin/server;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin;D:/ProgramFiles/Java/jdk1.8/bin/../jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\ProgramFiles\Java\jdk1.8\bin;D:\ProgramFiles\Java\jdk1.8\jre\bin;D:\ProgramFiles\TortoiseSVN\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Ruby23-x64\bin;C:\Users\yaoya\AppData\Local\Microsoft\WindowsApps;C:\Users\yaoya\AppData\Roaming\npm;%M2_HOME%\bin;D:\ProgramFiles\gradle-4.9\bin;;C:\WINDOWS\System32;;.]
+2018-08-06 15:58:48.242 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-06 15:58:49.317 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:58:49.891 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:58:49.892 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 15:58:50.694 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8082"]
+2018-08-06 15:58:50.720 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-06 15:58:50.787 [INFO ] [org.springframework.boot.StartupInfoLogger:59] - Started WebApplication in 7.756 seconds (JVM running for 8.589)
+2018-08-06 15:59:04.596 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-06 16:03:42.035 [INFO ] [org.springframework.boot.StartupInfoLogger:50] - Starting WebApplication on DESKTOP-QCS4UDO with PID 29372 (F:\sprotwork\git\sports\sports-parent\sports-web\target\classes started by Yao in F:\sprotwork\git\sports\sports-parent\sports-web)
+2018-08-06 16:03:42.047 [INFO ] [org.springframework.boot.SpringApplication:662] - No active profile set, falling back to default profiles: default
+2018-08-06 16:03:45.443 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8082"]
+2018-08-06 16:03:45.463 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-06 16:03:45.464 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-06 16:03:45.477 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\ProgramFiles\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin/server;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin;D:/ProgramFiles/Java/jdk1.8/bin/../jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\ProgramFiles\Java\jdk1.8\bin;D:\ProgramFiles\Java\jdk1.8\jre\bin;D:\ProgramFiles\TortoiseSVN\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Ruby23-x64\bin;C:\Users\yaoya\AppData\Local\Microsoft\WindowsApps;C:\Users\yaoya\AppData\Roaming\npm;%M2_HOME%\bin;D:\ProgramFiles\gradle-4.9\bin;;C:\WINDOWS\System32;;.]
+2018-08-06 16:03:45.659 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-06 16:03:46.684 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 16:03:47.291 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 16:03:47.292 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 16:03:47.993 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8082"]
+2018-08-06 16:03:48.020 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-06 16:03:48.074 [INFO ] [org.springframework.boot.StartupInfoLogger:59] - Started WebApplication in 6.665 seconds (JVM running for 7.582)
+2018-08-06 16:04:00.021 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-06 16:05:45.053 [INFO ] [org.springframework.boot.StartupInfoLogger:50] - Starting WebApplication on DESKTOP-QCS4UDO with PID 19072 (F:\sprotwork\git\sports\sports-parent\sports-web\target\classes started by Yao in F:\sprotwork\git\sports\sports-parent\sports-web)
+2018-08-06 16:05:45.061 [INFO ] [org.springframework.boot.SpringApplication:662] - No active profile set, falling back to default profiles: default
+2018-08-06 16:05:48.749 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8082"]
+2018-08-06 16:05:48.792 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-06 16:05:48.792 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-06 16:05:48.812 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\ProgramFiles\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin/server;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin;D:/ProgramFiles/Java/jdk1.8/bin/../jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\ProgramFiles\Java\jdk1.8\bin;D:\ProgramFiles\Java\jdk1.8\jre\bin;D:\ProgramFiles\TortoiseSVN\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Ruby23-x64\bin;C:\Users\yaoya\AppData\Local\Microsoft\WindowsApps;C:\Users\yaoya\AppData\Roaming\npm;%M2_HOME%\bin;D:\ProgramFiles\gradle-4.9\bin;;C:\WINDOWS\System32;;.]
+2018-08-06 16:05:48.999 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-06 16:05:50.241 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 16:05:50.847 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 16:05:50.848 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 16:05:51.501 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8082"]
+2018-08-06 16:05:51.526 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-06 16:05:51.588 [INFO ] [org.springframework.boot.StartupInfoLogger:59] - Started WebApplication in 7.126 seconds (JVM running for 8.075)
+2018-08-06 16:06:03.666 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-06 16:22:35.498 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/loading.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:35.915 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/cc.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:35.920 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/collapse.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:36.004 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/t3.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:36.012 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/expand.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:36.015 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:36.024 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/lclose.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:36.178 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/comp.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:36.753 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/t3.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:36.754 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/lclose.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:36.757 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/expand.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:36.757 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/collapse.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:36.950 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/lclose.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:36.952 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/collapse.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:36.966 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/expand.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:36.967 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/t3.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.059 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/lclose.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.067 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/t3.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.090 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/expand.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.091 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/collapse.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.258 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/lclose.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.259 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/t3.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.419 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/lclose.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.419 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/t3.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.452 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/collapse.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.453 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/expand.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.565 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/lclose.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.573 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/t3.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.717 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/lclose.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.721 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/collapse.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.726 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/expand.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.938 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/lclose.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.939 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/collapse.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:37.942 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/expand.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:38.012 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/lclose.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:38.014 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/collapse.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 16:22:38.021 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/expand.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:13:56.684 [INFO ] [org.springframework.boot.StartupInfoLogger:50] - Starting WebApplication on DESKTOP-QCS4UDO with PID 20376 (F:\sprotwork\git\sports\sports-parent\sports-web\target\classes started by Yao in F:\sprotwork\git\sports\sports-parent\sports-web)
+2018-08-06 17:13:56.695 [INFO ] [org.springframework.boot.SpringApplication:662] - No active profile set, falling back to default profiles: default
+2018-08-06 17:14:01.149 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8082"]
+2018-08-06 17:14:01.175 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-06 17:14:01.175 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-06 17:14:01.187 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\ProgramFiles\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin/server;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin;D:/ProgramFiles/Java/jdk1.8/bin/../jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\ProgramFiles\Java\jdk1.8\bin;D:\ProgramFiles\Java\jdk1.8\jre\bin;D:\ProgramFiles\TortoiseSVN\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Ruby23-x64\bin;C:\Users\yaoya\AppData\Local\Microsoft\WindowsApps;C:\Users\yaoya\AppData\Roaming\npm;%M2_HOME%\bin;D:\ProgramFiles\gradle-4.9\bin;;D:\ProgramFiles\eclipse;;.]
+2018-08-06 17:14:01.368 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-06 17:14:02.377 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 17:14:02.970 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 17:14:02.971 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 17:14:03.637 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8082"]
+2018-08-06 17:14:03.663 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-06 17:14:03.722 [INFO ] [org.springframework.boot.StartupInfoLogger:59] - Started WebApplication in 7.753 seconds (JVM running for 8.523)
+2018-08-06 17:14:08.169 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-06 17:32:14.830 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:32:45.768 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:33:21.315 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:43:34.135 [INFO ] [org.springframework.boot.StartupInfoLogger:50] - Starting WebApplication on DESKTOP-QCS4UDO with PID 12336 (F:\sprotwork\git\sports\sports-parent\sports-web\target\classes started by Yao in F:\sprotwork\git\sports\sports-parent\sports-web)
+2018-08-06 17:43:34.142 [INFO ] [org.springframework.boot.SpringApplication:662] - No active profile set, falling back to default profiles: default
+2018-08-06 17:43:37.607 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8082"]
+2018-08-06 17:43:37.629 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-06 17:43:37.630 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-06 17:43:37.645 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\ProgramFiles\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin/server;D:/ProgramFiles/Java/jdk1.8/bin/../jre/bin;D:/ProgramFiles/Java/jdk1.8/bin/../jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\ProgramFiles\Java\jdk1.8\bin;D:\ProgramFiles\Java\jdk1.8\jre\bin;D:\ProgramFiles\TortoiseSVN\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\nodejs\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Ruby23-x64\bin;C:\Users\yaoya\AppData\Local\Microsoft\WindowsApps;C:\Users\yaoya\AppData\Roaming\npm;%M2_HOME%\bin;D:\ProgramFiles\gradle-4.9\bin;;D:\ProgramFiles\eclipse;;.]
+2018-08-06 17:43:37.823 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-06 17:43:38.821 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 17:43:39.399 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 17:43:39.400 [INFO ] [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-06 17:43:40.115 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8082"]
+2018-08-06 17:43:40.144 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-06 17:43:40.221 [INFO ] [org.springframework.boot.StartupInfoLogger:59] - Started WebApplication in 6.703 seconds (JVM running for 7.575)
+2018-08-06 17:44:02.201 [INFO ] [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-06 17:45:15.061 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/lsit] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:45:19.182 [INFO ] [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-06 17:45:19.484 [INFO ] [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-06 17:48:48.177 [ERROR] [org.thymeleaf.TemplateEngine:1136] - [THYMELEAF][http-nio-8082-exec-9] Exception processing template "football_index": An error happened during template parsing (template: "class path resource [templates/football_index.html]" - line 39, col 42)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/football_index.html]" - line 39, col 42)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:685) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: org.attoparser.ParseException: (Line = 39, Column = 42) Malformed markup: Attribute ">" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:220) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	... 53 common frames omitted
+2018-08-06 17:48:48.183 [ERROR] [org.apache.juli.logging.DirectJDKLog:182] - Servlet.service() for servlet [dispatcherServlet] in context with path [/sportweb] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/football_index.html]" - line 39, col 42)] with root cause
+org.attoparser.ParseException: (Line = 39, Column = 42) Malformed markup: Attribute ">" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:220) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:685) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2018-08-06 17:49:56.016 [ERROR] [org.thymeleaf.TemplateEngine:1136] - [THYMELEAF][http-nio-8082-exec-2] Exception processing template "football_index": An error happened during template parsing (template: "class path resource [templates/football_index.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/football_index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:685) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: org.attoparser.ParseException: Could not parse as each: "football,iterStat:${indexList} style=" (template: "football_index" - line 37, col 11)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	... 53 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as each: "football,iterStat:${indexList} style=" (template: "football_index" - line 37, col 11)
+	at org.thymeleaf.standard.expression.EachUtils.parseEach(EachUtils.java:68) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.processor.StandardEachTagProcessor.doProcess(StandardEachTagProcessor.java:59) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	... 55 common frames omitted
+2018-08-06 17:49:56.021 [ERROR] [org.apache.juli.logging.DirectJDKLog:182] - Servlet.service() for servlet [dispatcherServlet] in context with path [/sportweb] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/football_index.html]")] with root cause
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as each: "football,iterStat:${indexList} style=" (template: "football_index" - line 37, col 11)
+	at org.thymeleaf.standard.expression.EachUtils.parseEach(EachUtils.java:68) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.processor.StandardEachTagProcessor.doProcess(StandardEachTagProcessor.java:59) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:685) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2018-08-06 17:50:07.522 [ERROR] [org.thymeleaf.TemplateEngine:1136] - [THYMELEAF][http-nio-8082-exec-5] Exception processing template "football_index": An error happened during template parsing (template: "class path resource [templates/football_index.html]" - line 39, col 8)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/football_index.html]" - line 39, col 8)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:685) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+Caused by: org.attoparser.ParseException: (Line = 39, Column = 8) Incomplete structure: "<td th:text="${football.leagueName} width="11%" bgcolor="#8e9cdf" >
+								<font color="#ffffff" ><br>
+									<span id="t_1592658" >8-6 16:00</span>
+								</font>
+							</td>
+							<td style="text-align:left;">
+								<div id="home_1592658">&nbsp;
+									<a href="javascript:TeamPanlu_10(1592658)">河北华夏幸福后备队</a>
+								</div> &nbsp;
+								<br>
+								<div id="guest_1592658">&nbsp;
+									<a href="javascript:TeamPanlu_10(1592658)">天津泰达后备队</a>
+								</div>
+							</td>
+							<td onclick="showdetail(1592658);">
+								<span id="time_1592658">69<img src="images/in.gif" border="0"></span>
+							</td>
+							<td>
+								<span id="hs_1592658" class="score">1</span><br><br>
+								<span id="gs_1592658" class="score">1</span>
+							</td>
+							<td style="text-align:center;" index="0"></td>
+							<td style="text-align:center;" index="0">
+								<a class="sb">1.14</a><br>
+								<a class="pk">3</a><br>
+								<a>0.69</a>
+							</td>
+							<td style="text-align:center;" index="0">
+								<a class="sb">0.70</a><br>
+								<a class="pk">2.5/3</a><br>
+								<a>1.10</a>
+							</td>
+							<td style="text-align:center;" index="0"></td>
+							<td style="text-align:center;" index="0"></td>
+						</tr> -->
+					</tbody>
+				</table>
+			</div>
+		<div id="right">
+			<div id="rightAd" style="line-height:60%"></div>    
+			<div id="rightFloatAd" style="line-height:60%">
+				<div id="lqder" style="position: absolute;visibility: visible;z-index:1;line-height:60%"></div>
+			</div>
+		</div>
+		<div style="clear:both"></div>  
+	</div>
+
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	... 53 common frames omitted
+2018-08-06 17:50:07.525 [ERROR] [org.apache.juli.logging.DirectJDKLog:182] - Servlet.service() for servlet [dispatcherServlet] in context with path [/sportweb] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/football_index.html]" - line 39, col 8)] with root cause
+org.attoparser.ParseException: (Line = 39, Column = 8) Incomplete structure: "<td th:text="${football.leagueName} width="11%" bgcolor="#8e9cdf" >
+								<font color="#ffffff" ><br>
+									<span id="t_1592658" >8-6 16:00</span>
+								</font>
+							</td>
+							<td style="text-align:left;">
+								<div id="home_1592658">&nbsp;
+									<a href="javascript:TeamPanlu_10(1592658)">河北华夏幸福后备队</a>
+								</div> &nbsp;
+								<br>
+								<div id="guest_1592658">&nbsp;
+									<a href="javascript:TeamPanlu_10(1592658)">天津泰达后备队</a>
+								</div>
+							</td>
+							<td onclick="showdetail(1592658);">
+								<span id="time_1592658">69<img src="images/in.gif" border="0"></span>
+							</td>
+							<td>
+								<span id="hs_1592658" class="score">1</span><br><br>
+								<span id="gs_1592658" class="score">1</span>
+							</td>
+							<td style="text-align:center;" index="0"></td>
+							<td style="text-align:center;" index="0">
+								<a class="sb">1.14</a><br>
+								<a class="pk">3</a><br>
+								<a>0.69</a>
+							</td>
+							<td style="text-align:center;" index="0">
+								<a class="sb">0.70</a><br>
+								<a class="pk">2.5/3</a><br>
+								<a>1.10</a>
+							</td>
+							<td style="text-align:center;" index="0"></td>
+							<td style="text-align:center;" index="0"></td>
+						</tr> -->
+					</tbody>
+				</table>
+			</div>
+		<div id="right">
+			<div id="rightAd" style="line-height:60%"></div>    
+			<div id="rightFloatAd" style="line-height:60%">
+				<div id="lqder" style="position: absolute;visibility: visible;z-index:1;line-height:60%"></div>
+			</div>
+		</div>
+		<div style="clear:both"></div>  
+	</div>
+
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:685) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2018-08-06 17:50:19.693 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:50:20.249 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:50:20.375 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:50:20.534 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:51:06.034 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:51:06.131 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:51:06.178 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:51:06.232 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:51:06.483 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:51:06.644 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:51:06.762 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:51:06.898 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:52:30.840 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:52:30.890 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:52:30.916 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:52:30.939 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:52:31.177 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:52:31.263 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:52:31.358 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:52:31.461 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:52:31.552 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:53:13.677 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:53:13.706 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:53:13.729 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:53:13.754 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:53:13.779 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:53:14.000 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:53:14.121 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:53:14.219 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:53:14.307 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:05.816 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:05.843 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:05.869 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:05.895 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:06.077 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:06.157 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:06.287 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:06.381 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:06.497 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:44.157 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:44.197 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:44.224 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:44.247 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:44.525 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:44.675 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:54:44.776 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:57:48.671 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:57:48.756 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:57:48.799 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:57:48.848 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:57:49.090 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:57:49.187 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:57:49.338 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:57:49.424 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:57:49.588 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:57:49.695 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:58:09.212 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:58:09.272 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:58:09.310 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:58:09.370 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:58:09.767 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:58:09.908 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:58:10.225 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:58:10.446 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 17:58:10.555 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:01:32.257 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:01:32.296 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:01:32.329 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:01:32.363 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:01:32.569 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:01:32.668 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:01:32.786 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:01:32.889 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:01:33.095 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:04:30.487 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:04:30.537 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:04:30.590 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:04:30.639 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:04:30.675 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:04:30.754 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:04:30.803 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:04:30.856 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:04:31.305 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:04:31.442 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:04:31.572 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/images/in.gif] in DispatcherServlet with name 'dispatcherServlet'
+2018-08-06 18:04:56.835 [WARN ] [org.springframework.web.servlet.DispatcherServlet:1205] - No mapping found for HTTP request with URI [/sportweb/holle] in DispatcherServlet with name 'dispatcherServlet'
