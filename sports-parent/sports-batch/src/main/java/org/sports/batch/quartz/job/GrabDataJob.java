@@ -16,7 +16,7 @@ public class GrabDataJob implements Job {
 	
 	@Override
 	public void execute(JobExecutionContext context) throws JobExecutionException {
-		logger.info("GrabBet365Job");
+		logger.info("GrabDataJob");
 		grabDataHandle = ApplicationContextProvider.getApplicationContext().getBean(GrabDataHandle.class);
 		grabDataHandle.grab();
 	}
