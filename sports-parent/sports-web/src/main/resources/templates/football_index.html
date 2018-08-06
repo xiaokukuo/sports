@@ -31,7 +31,7 @@
 				<table width="100%" border="0" cellpadding="0" cellspacing="1" class="b_tab">
 					<tbody>
 						<tr class="stit" style="line-height:22px;">
-							<td width="11%" colspan="2">联赛</td><td>对阵</td><td width="6%">时</td><td width="6%">比分</td><td width="10%">澳彩</td><td width="10%">易胜博</td><td width="10%">Bet365</td><td width="10%">Crown</td><td width="10%">12bet</td>
+							<td width="11%" colspan="2">联赛</td><td>对阵</td><td width="6%">比分</td><td width="10%">澳彩</td><td width="10%">易胜博</td><td width="10%">Bet365</td><td width="10%">Crown</td><td width="10%">12bet</td>
 						</tr>
 					
 						<tr th:each="football,iterStat:${indexList}" style="background-color:white" align="center" height="15" id="tr_1592658" index="0">
@@ -48,9 +48,6 @@
 								<div id="guest_1592658">&nbsp;
 									<a th:text="${football.teamName2}"></a>
 								</div>
-							</td>
-							<td onclick="showdetail(1592658);">
-								<span id="time_1592658">69<img src="images/in.gif" border="0"></span>
 							</td>
 							<td>
 								<span id="hs_1592658" class="score" th:text="${football.score1}">1</span><br><br>
