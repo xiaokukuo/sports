@@ -1,11 +1,8 @@
 package org.sports.batch;
 
-import java.util.List;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.sports.core.model.ExponentData;
-import org.sports.core.service.ExponentDataService;
+import org.sports.batch.handle.GrabDataHandle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -17,12 +14,11 @@ import junit.framework.TestCase;
 public class AppTest extends TestCase {
 	
 	@Autowired
-	private ExponentDataService exponentDataService;
+	private GrabDataHandle grabDataHandle;
 
 	@Test
 	public void contextLoads() {
-		List<ExponentData> list = exponentDataService.findAll();
-		System.out.println(list.toArray());
+		grabDataHandle.grab();
 	}
 	
 }

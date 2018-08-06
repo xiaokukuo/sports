@@ -159,7 +159,9 @@ public class GrabDataHandle {
                 }
             }
             exponent = new ExponentData();
-            sum = sum/count;
+            if(sum >0){
+            	sum = sum/count;
+            }
             exponent.setIndexId(football.getIndexId());
             exponent.setTime(LocalTime.now().withSecond(0).withNano(0).toString());
             
@@ -168,7 +170,7 @@ public class GrabDataHandle {
             list.add(football);
             avgList.add(exponent);
         }
-
+        indexService.truncateTable();
         indexService.save(list);
         exponentDataService.save(avgList);
     }
