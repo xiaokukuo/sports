@@ -1,5 +1,7 @@
 package org.sports.core.service;
 
+import java.util.List;
+
 import org.sports.core.common.GeneralMapper;
 import org.sports.core.common.GeneralServiceImpl;
 import org.sports.core.mapper.ExponentDataMapper;
@@ -18,5 +20,9 @@ public class ExponentDataService extends GeneralServiceImpl<ExponentData> {
         return dataMapper;
     }
 
+    
+    public List<ExponentData> findByIndexId(String indexId){
+    	return dataMapper.selectByIndexId(indexId);
+    }
 
 }

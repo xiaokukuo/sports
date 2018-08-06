@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <!-- 引入 ECharts 文件 -->
-    <script src="/sportlottery/static/jquery-3.3.1.js"></script>
-    <script src="/sportlottery/static/echarts.min.js"></script>
+    <script src="/sportweb/static/jquery-3.3.1.js"></script>
+    <script src="/sportweb/static/echarts.min.js"></script>
 </head>
 <body>
 <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
@@ -15,7 +15,7 @@
 
     setInterval(function (){
 
-        $.get('/sportlottery/data', function (data) {
+        $.get('/sportweb/data', function (data) {
             data_ = data;
 
             var option = {
