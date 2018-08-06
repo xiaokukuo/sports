@@ -2,6 +2,7 @@ package org.sports.batch;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.sports.core.MapperNameGenerator;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
@@ -11,6 +12,6 @@ import org.springframework.context.annotation.PropertySources;
 @MapperScan(value = { "org.sports.core.mapper" }, nameGenerator = MapperNameGenerator.class)
 public class BatchApplication {
 	public static void main(String[] args) {
-		System.out.println("Hello World!");
+		SpringApplication.run(BatchApplication.class, args);
 	}
 }
