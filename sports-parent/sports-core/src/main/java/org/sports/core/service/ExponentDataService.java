@@ -24,5 +24,9 @@ public class ExponentDataService extends GeneralServiceImpl<ExponentData> {
     public List<ExponentData> findByIndexId(String indexId){
     	return dataMapper.selectByIndexId(indexId);
     }
+    
+    public List<Double> findDataByIndexId(String indexId){
+    	return dataMapper.selectDataByIndexId(indexId);
+    }
 
 }

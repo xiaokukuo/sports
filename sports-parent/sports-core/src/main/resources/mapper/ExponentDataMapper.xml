@@ -9,8 +9,12 @@
 		<id column="data" property="data"/>
 	</resultMap>
 
+	<select id="selectDataByIndexId" resultType="java.lang.Double">
+		select `data` from exponent_data where `index_id` = #{indexId} order by `id` desc limit 100;
+	</select>
+
 	<select id="selectByIndexId" resultMap="ExponentMap">
-		select `time`, `data` from exponent_data where `index_id` = #{indexId} order by `id`;
+		select `time`, `data` from exponent_data where `index_id` = #{indexId} order by `id` desc limit 100;
 	</select>
 
 	<select id="selectById" parameterType="java.lang.Integer" resultMap="ExponentMap">

@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.sports.core.model.ExponentData;
 import org.sports.core.service.ExponentDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,8 +20,8 @@ public class AppTest extends TestCase {
 
 	@Test
 	public void contextLoads() {
-		List<ExponentData> list = exponentDataService.findAll();
-		System.out.println(list.toArray());
+		List<Double> list = exponentDataService.findDataByIndexId("1592487534");;
+		System.out.println(list.get(0));
 	}
 	
 }

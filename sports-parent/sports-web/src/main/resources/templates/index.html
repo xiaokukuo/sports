@@ -12,26 +12,33 @@
 <script type="text/javascript">
     var data_;
     var myChart = echarts.init(document.getElementById('main'));
-
+    
     setInterval(function (){
 
         $.get('/sportweb/data', function (data) {
-            data_ = data;
-
+        	data_ =data;
+        	data_.shift();
             var option = {
                 title: {
                     text: '指数'
                 },
                 tooltip: {
-                    trigger: 'axis'
+                    trigger: 'axis',
+                    axisPointer: {
+                        animation: false
+                    }
                 },
                 xAxis: {
-                    //axisTick: {length:12},
                     data: data_.map(function (item) {
                         return item.time;
-                    })
+                    }),
+                    
+                    splitLine: {
+                        show: false
+                    }
                 },
                 yAxis: {
+                	boundaryGap: [0, '100%'],
                     splitLine: {
                         show: false
                     }
@@ -46,48 +53,15 @@
                         saveAsImage: {}
                     }
                 },
-                dataZoom: [{
-                    startValue: '00:00'
-                }, {
-                    type: 'inside'
-                }],
-
                 series: {
                     type: 'line',
                     data: data_.map(function (item) {
                         return item.data;
                     })
-                    /*,
-                    markLine: {
-                        silent: true,
-                        data: [{
-                            yAxis: 50
-                        }, {
-                            yAxis: 100
-                        }, {
-                            yAxis: 150
-                        }, {
-                            yAxis: 200
-                        }, {
-                            yAxis: 300
-                        }]
-                    }*/
                 }
             };
             myChart.setOption(option);
         });
-
-
-
-
-
-
-        /*var data0 = option.series[0].data;
-        var data1 = option.series[1].data;
-        // data0.shift();
-        data0.push(Math.round(Math.random() * 1000));
-        // data1.shift();
-        data1.push(Math.round(Math.random() * 1000));*/
 
     }, 2000);
 </script>

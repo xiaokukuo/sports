@@ -12,4 +12,6 @@ public interface ExponentDataMapper  extends GeneralMapper<ExponentData> {
 
 	List<ExponentData> selectByIndexId(@Param("indexId")String indexId);
 	
+	List<Double> selectDataByIndexId(@Param("indexId")String indexId);
+	
 }

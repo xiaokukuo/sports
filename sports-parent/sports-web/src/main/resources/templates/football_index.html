@@ -34,49 +34,50 @@
 							<td width="11%" colspan="2">联赛</td><td>对阵</td><td width="6%">比分</td><td width="10%">澳彩</td><td width="10%">易胜博</td><td width="10%">Bet365</td><td width="10%">Crown</td><td width="10%">12bet</td>
 						</tr>
 					
-						<tr th:each="football,iterStat:${indexList}" style="background-color:white" align="center" height="15" id="tr_1592658" index="0">
+						<tr th:attr="id=${football.indexId}" th:each="football,iterStat:${indexList}" style="background-color:white" align="center" height="15" index="0">
 							<td></td>
-							<td th:attr="id=${football.indexId}" width="11%" bgcolor="#8e9cdf" >
+							<td th:attr="id='l_'+${football.indexId}" width="11%" bgcolor="#8e9cdf" >
 								<font color="#ffffff"  th:text="${football.leagueName}"></font><br>
 								<span th:text="${football.startTime}"></span>
 							</td>
 							<td style="text-align:left;">
 								<div>&nbsp;
-									<a th:text="${football.teamName1}"></a>
+									<a th:attr="id='t1_'+${football.indexId}" th:text="${football.teamName1}"></a>
 								</div> &nbsp;
 								<br>
-								<div id="guest_1592658">&nbsp;
-									<a th:text="${football.teamName2}"></a>
+								<div>&nbsp;
+									<a th:attr="id='t2_'+${football.indexId}" th:text="${football.teamName2}"></a>
 								</div>
 							</td>
 							<td>
-								<span id="hs_1592658" class="score" th:text="${football.score1}">1</span><br><br>
-								<span id="gs_1592658" class="score" th:text="${football.score2}">1</span>
+								<span th:attr="id='hs_'+${football.indexId}" class="score" th:text="${football.score1}"></span>
+								<br><br>
+								<span th:attr="id='gs_'+${football.indexId}" class="score" th:text="${football.score2}"></span>
 							</td>
-							<td style="text-align:center;" index="0">
-								<a class="sb" th:text="${football.over1}"></a><br>
-								<a class="pk" th:text="${football.webGoal1}"></a><br>
-								<a th:text="${football.under1}"></a>
+							<td style="text-align:center;">
+								<a th:attr="id='ov1_'+${football.indexId}" th:text="${football.over1}"></a><br>
+								<a th:attr="id='wg1_'+${football.indexId}" th:text="${football.webGoal1}"></a><br>
+								<a th:attr="id='ud1_'+${football.indexId}" th:text="${football.under1}"></a>
 							</td>
-							<td style="text-align:center;" index="0">
-								<a class="sb" th:text="${football.over2}"></a><br>
-								<a class="pk" th:text="${football.webGoal2}"></a><br>
-								<a th:text="${football.under2}"></a>
+							<td style="text-align:center;">
+								<a th:attr="id='ov2_'+${football.indexId}" th:text="${football.over2}"></a><br>
+								<a th:attr="id='wg2_'+${football.indexId}" th:text="${football.webGoal2}"></a><br>
+								<a th:attr="id='ud2_'+${football.indexId}" th:text="${football.under2}"></a>
 							</td>
-							<td style="text-align:center;" index="0">
-								<a class="sb" th:text="${football.over3}"></a><br>
-								<a class="pk" th:text="${football.webGoal3}"></a><br>
-								<a th:text="${football.under3}"></a>
+							<td style="text-align:center;">
+								<a th:attr="id='ov3_'+${football.indexId}" th:text="${football.over3}"></a><br>
+								<a th:attr="id='wg3_'+${football.indexId}" th:text="${football.webGoal3}"></a><br>
+								<a th:attr="id='ud3_'+${football.indexId}" th:text="${football.under3}"></a>
 							</td>
-							<td style="text-align:center;" index="0">
-								<a class="sb" th:text="${football.over4}"></a><br>
-								<a class="pk" th:text="${football.webGoal4}"></a><br>
-								<a th:text="${football.under4}"></a>
+							<td style="text-align:center;">
+								<a th:attr="id='ov4_'+${football.indexId}" th:text="${football.over4}"></a><br>
+								<a th:attr="id='wg4_'+${football.indexId}" th:text="${football.webGoal4}"></a><br>
+								<a th:attr="id='ud4_'+${football.indexId}" th:text="${football.under4}"></a>
 							</td>
-							<td style="text-align:center;" index="0">
-								<a class="sb" th:text="${football.over5}"></a><br>
-								<a class="pk" th:text="${football.webGoal5}"></a><br>
-								<a th:text="${football.under5}"></a>
+							<td style="text-align:center;">
+								<a th:attr="id='ov5_'+${football.indexId}" th:text="${football.over5}"></a><br>
+								<a th:attr="id='wg5_'+${football.indexId}" th:text="${football.webGoal5}"></a><br>
+								<a th:attr="id='ud5_'+${football.indexId}" th:text="${football.under5}"></a>
 							</td>
 						</tr> 
 					</tbody>

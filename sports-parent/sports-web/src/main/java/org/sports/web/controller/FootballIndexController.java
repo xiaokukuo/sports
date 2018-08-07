@@ -41,7 +41,13 @@ public class FootballIndexController {
 	@RequestMapping("/data")
 	@ResponseBody
 	public List<ExponentData> getdata() {
-		return exponentDataService.findByIndexId("1580334476");
+		return exponentDataService.findByIndexId("1592487534");
+	}
+	
+	@RequestMapping("/dataD")
+	@ResponseBody
+	public List<Double> getdataOoub() {
+		return exponentDataService.findDataByIndexId("1592487534");
 	}
 
 }
