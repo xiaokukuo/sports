@@ -21,33 +21,26 @@ public class FootballIndexController {
 	@Autowired
     private FootballIndexService indexService;
 	
-	@RequestMapping("/list")
-	public String footballIndex(Model model) {
-		List<FootballIndex> list = indexService.findAll();
-		model.addAttribute("indexList", list);
-		return "football_index";
-	}
 	
-	@RequestMapping("/test")
-	public String test() {
-		return "test";
-	}
 	
-	@RequestMapping("/hello")
-	public String hello() {
-		return "index";
+	@RequestMapping("/detail")
+	public String detail(String indexId,Model model) {
+		model.addAttribute("indexId", indexId);
+		return "/detail";
 	}
 	
 	@RequestMapping("/data")
 	@ResponseBody
-	public List<ExponentData> getdata() {
-		return exponentDataService.findByIndexId("1592487534");
+	public List<ExponentData> getdata(String indexId) {
+		return exponentDataService.findByIndexId(indexId);
 	}
 	
-	@RequestMapping("/dataD")
-	@ResponseBody
-	public List<Double> getdataOoub() {
-		return exponentDataService.findDataByIndexId("1592487534");
+	
+	@RequestMapping("/index")
+	public String footballIndex(Model model) {
+		List<FootballIndex> list = indexService.findAll();
+		model.addAttribute("indexList", list);
+		return "football_index";
 	}
 
 }

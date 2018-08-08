@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- 引入 ECharts 文件 -->
+    <script src="/sportweb/static/jquery-3.3.1.js"></script>
+    <script src="/sportweb/static/echarts.min.js"></script>
+</head>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="width: 1000px;height:600px;"></div>
+<script type="text/javascript">
+	var indexId_ = [[${indexId}]];  
+	var data_;
+    var myChart = echarts.init(document.getElementById('main'));
+    
+    setInterval(function (){
+
+        $.get("/sportweb/data?indexId="+indexId_, function (data) {
+        	data_ =data;
+        	data_.shift();
+            var option = {
+                title: {
+                    text: '指数'
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        animation: false
+                    }
+                },
+                xAxis: {
+                    data: data_.map(function (item) {
+                        return item.time;
+                    }),
+                    
+                    splitLine: {
+                        show: false
+                    }
+                },
+                yAxis: {
+                	boundaryGap: [0, '100%'],
+                    splitLine: {
+                        show: false
+                    }
+                },
+                toolbox: {
+                    left: 'center',
+                    feature: {
+                        dataZoom: {
+                            yAxisIndex: 'none'
+                        },
+                        restore: {},
+                        saveAsImage: {}
+                    }
+                },
+                series: {
+                    type: 'line',
+                    data: data_.map(function (item) {
+                        return item.data;
+                    })
+                }
+            };
+            myChart.setOption(option);
+        });
+
+    }, 2000);
+</script>
+</body>
+</html>
