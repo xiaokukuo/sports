@@ -1,8 +1,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link href="/sportweb/static/css/odds.css" rel="stylesheet"
-		type="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="/sportweb/static/css/odds.css" rel="stylesheet" type="text/css">
+	<script src="/sportweb/static/jquery-3.3.1.js"></script>
 </head>
 <body>
 	<div id="topMenu">
@@ -36,8 +36,7 @@
 					
 						<tr th:attr="id=${football.indexId}" th:each="football,iterStat:${indexList}" style="background-color:white" align="center" height="15" index="0">
 							<td></td>
-							<td 
-							th:onclick="'javascript:showdetail('+${football.indexId}+')' " th:attr="id='l_'+${football.indexId}" width="11%" bgcolor="#8e9cdf" >
+							<td th:onclick="'javascript:showdetail('+${football.indexId}+')' " th:attr="id='l_'+${football.indexId}" width="11%" bgcolor="#8e9cdf" >
 								<a th:href="'./detail?indexId='+${football.indexId} "  target="_blank" color="#ffffff"  th:text="${football.leagueName}"></a><br>
 								<span th:text="${football.startTime}"></span>
 							</td>
@@ -51,7 +50,7 @@
 								</div>
 							</td>
 							<td>
-								<span th:attr="id='hs_'+${football.indexId}" class="score" th:text="${football.score1}"></span>
+								&nbsp;<span th:attr="id='hs_'+${football.indexId}" class="score" th:text="${football.score1}"></span>
 								<br><br>
 								<span th:attr="id='gs_'+${football.indexId}" class="score" th:text="${football.score2}"></span>
 							</td>
@@ -83,22 +82,18 @@
 						</tr> 
 					</tbody>
 				</table>
+				
 			</div>
-		<div id="right">
-			<div id="rightAd" style="line-height:60%"></div>    
-			<div id="rightFloatAd" style="line-height:60%">
-				<div id="lqder" style="position: absolute;visibility: visible;z-index:1;line-height:60%"></div>
+			<div id="right">
+				<div id="rightAd" style="line-height:60%"></div>    
+				<div id="rightFloatAd" style="line-height:60%">
+					<div id="lqder" style="position: absolute;visibility: visible;z-index:1;line-height:60%"></div>
+				</div>
 			</div>
+			<div style="clear:both"></div>  
 		</div>
-		<div style="clear:both"></div>  
-	</div>
-	<script type="text/javascript">
-
-	function showdetail(id){
 		
-		alert(id)
-	}
-	</script>
-
+	</div>
+	<script src="/sportweb/static/js/refresh_func.js"></script>
 </body>
 </html>

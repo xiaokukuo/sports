@@ -21,7 +21,12 @@ public class FootballIndexController {
 	@Autowired
     private FootballIndexService indexService;
 	
-	
+	@RequestMapping("/index")
+	public String footballIndex(Model model) {
+		List<FootballIndex> list = indexService.findAll();
+		model.addAttribute("indexList", list);
+		return "football_index";
+	}
 	
 	@RequestMapping("/detail")
 	public String detail(String indexId,Model model) {
@@ -36,11 +41,12 @@ public class FootballIndexController {
 	}
 	
 	
-	@RequestMapping("/index")
-	public String footballIndex(Model model) {
+	@RequestMapping("/odds")
+	@ResponseBody
+	public List<FootballIndex> getOdds() {
 		List<FootballIndex> list = indexService.findAll();
-		model.addAttribute("indexList", list);
-		return "football_index";
+		
+		return list;
 	}
 
 }
