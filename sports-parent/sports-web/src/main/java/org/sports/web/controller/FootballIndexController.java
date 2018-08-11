@@ -30,8 +30,9 @@ public class FootballIndexController {
 	}
 	
 	@GetMapping("/detail")
-	public String detail(String indexId,Model model) {
+	public String detail(String indexId,String name, Model model) {
 		model.addAttribute("indexId", indexId);
+		model.addAttribute("leagueName", name);
 		return "detail_index";
 	}
 	
