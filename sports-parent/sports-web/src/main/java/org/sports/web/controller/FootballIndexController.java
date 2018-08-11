@@ -9,6 +9,7 @@ import org.sports.core.service.FootballIndexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -28,10 +29,10 @@ public class FootballIndexController {
 		return "football_index";
 	}
 	
-	@RequestMapping("/detail")
+	@GetMapping("/detail")
 	public String detail(String indexId,Model model) {
 		model.addAttribute("indexId", indexId);
-		return "/detail";
+		return "detail_index";
 	}
 	
 	@RequestMapping("/data")

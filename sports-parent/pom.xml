@@ -32,7 +32,10 @@
 	</properties>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 		<!-- mybatis start -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -64,7 +67,7 @@
 		</dependency>
 	</dependencies>
 
-	<build>
+	<!-- <build>
 		<plugins>
 			 <plugin>
 		         <artifactId>maven-compiler-plugin</artifactId>
@@ -81,7 +84,7 @@
 			    </configuration>
 			</plugin>
 		</plugins>
-	</build>
+	</build> -->
 	<modules>
 		<module>sports-core</module>
 		<module>sports-web</module>
