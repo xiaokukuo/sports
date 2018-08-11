@@ -36,7 +36,7 @@
 					
 						<tr th:attr="id=${football.indexId}" th:each="football,iterStat:${indexList}" style="background-color:white" align="center" height="15" index="0">
 							<td></td>
-							<td th:onclick="'javascript:showdetail('+${football.indexId}+')' " th:attr="id='l_'+${football.indexId}" width="11%" bgcolor="#8e9cdf" >
+							<td th:attr="id='l_'+${football.indexId}" width="11%" bgcolor="#8e9cdf" >
 								<a th:href="'./detail?indexId='+${football.indexId} "  target="_blank" color="#ffffff"  th:text="${football.leagueName}"></a><br>
 								<span th:text="${football.startTime}"></span>
 							</td>
