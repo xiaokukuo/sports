@@ -83,9 +83,7 @@ public class SchedulerTask {
 			JobKey jobKey = JobKey.jobKey(task.getTaskName(),task.getTaskGroup());
 			JobDataMap jdm = scheduler.getJobDetail(jobKey).getJobDataMap();
 			String  oldCron =  (String) jdm.get("jobScheduler");
-			if (oldCron.equals(task.getCron())) {
-				System.err.println("任务不变");
-			}else{
+			if (!oldCron.equals(task.getCron())) {
 				deleteJob(task, scheduler);
 				//System.err.println("任务执行时间改变");
 				addJob(task, scheduler);
