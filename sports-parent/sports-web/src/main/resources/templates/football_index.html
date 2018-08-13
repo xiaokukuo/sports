@@ -36,8 +36,8 @@
 					
 						<tr th:attr="id=${football.indexId}" th:each="football,iterStat:${indexList}" style="background-color:white" align="center" height="15" index="0">
 							<td></td>
-							<td th:onclick="'javascript:showdetail('+${football.indexId}+')' " th:attr="id='l_'+${football.indexId}" width="11%" bgcolor="#8e9cdf" >
-								<a th:href="'./detail?indexId='+${football.indexId} "  target="_blank" color="#ffffff"  th:text="${football.leagueName}"></a><br>
+							<td th:attr="id='l_'+${football.indexId}" width="11%" bgcolor="#8e9cdf" >
+								<a th:href="'./detail?indexId='+${football.indexId}+'&name='+${football.leagueName} "  target="_blank" color="#ffffff"  th:text="${football.leagueName}"></a><br>
 								<span th:text="${football.startTime}"></span>
 							</td>
 							<td style="text-align:left;">
@@ -94,6 +94,11 @@
 		</div>
 		
 	</div>
-	<script src="/sportweb/static/js/refresh_func.js"></script>
+	<script type="text/javascript" src="/sportweb/static/js/refresh_func.js"></script>
+	<script type="text/javascript">
+		showdetail(indexId){
+			alert(indexId);
+		}
+	</script>
 </body>
 </html>
