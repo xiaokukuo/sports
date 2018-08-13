@@ -36,7 +36,7 @@ public class SchedulerTask {
 		task.setId(111);
 		task.setTaskName("365");
 		task.setTaskGroup("group1");
-		task.setCron("0 0/1 0-6,16-24 * * ?");
+		task.setCron("0 0/1 0-6,16-23 * * ?");
 		task.setClassName("org.sports.batch.quartz.job.GrabDataJob");
 		task.setTaskType("Y");
 		
