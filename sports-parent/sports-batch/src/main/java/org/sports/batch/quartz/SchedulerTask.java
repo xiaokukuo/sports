@@ -39,6 +39,17 @@ public class SchedulerTask {
 		task.setCron("0 0/1 0-6,16-24 * * ?");
 		task.setClassName("org.sports.batch.quartz.job.GrabDataJob");
 		task.setTaskType("Y");
+		
+		
+		BatchTaskInfo task2 = new BatchTaskInfo();
+		task2.setId(111);
+		task2.setTaskName("clear");
+		task2.setTaskGroup("clearTable");
+		task2.setCron("0 0 7 * * ?");
+		task2.setClassName("org.sports.batch.quartz.job.ClearTableJob");
+		task2.setTaskType("Y");
+		
+		taskInfos.add(task2);
 		taskInfos.add(task);
 	}
 	
