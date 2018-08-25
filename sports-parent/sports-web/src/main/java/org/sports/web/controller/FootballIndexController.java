@@ -22,6 +22,12 @@ public class FootballIndexController {
 	@Autowired
     private FootballIndexService indexService;
 	
+	@RequestMapping("/login")
+	public String login(Model model) {
+		
+		return "login";
+	}
+	
 	@RequestMapping("/index")
 	public String footballIndex(Model model) {
 		List<FootballIndex> list = indexService.findAll();

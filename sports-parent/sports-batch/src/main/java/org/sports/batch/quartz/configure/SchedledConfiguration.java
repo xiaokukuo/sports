@@ -18,7 +18,7 @@ public class SchedledConfiguration implements Serializable{
 	 * attention: Details：配置定时任务
 	 */
 	@Bean(name = "jobDetail")
-	public MethodInvokingJobDetailFactoryBean detailFactoryBean(SchedulerTask task) {// ScheduleTask为需要执行的任务
+	public   MethodInvokingJobDetailFactoryBean methodInvokingJobDetailFactoryBean(SchedulerTask task) {// ScheduleTask为需要执行的任务
 		MethodInvokingJobDetailFactoryBean jobDetail = new MethodInvokingJobDetailFactoryBean();
 
 		jobDetail.setConcurrent(false);// 是否并发执行

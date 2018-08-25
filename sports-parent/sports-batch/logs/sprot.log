@@ -1,0 +1,24 @@
+2018-08-11 14:44:23.614 [INFO ] [org.springframework.boot.StartupInfoLogger:50] - Starting BatchApplication on USER-20170225NV with PID 5800 (E:\github\sports\sports-parent\sports-batch\target\classes started by Administrator in E:\github\sports\sports-parent\sports-batch)
+2018-08-11 14:44:23.616 [INFO ] [org.springframework.boot.SpringApplication:662] - No active profile set, falling back to default profiles: default
+2018-08-11 14:44:24.319 [INFO ] [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-11 14:44:24.472 [INFO ] [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-11 14:44:24.521 [INFO ] [org.quartz.impl.StdSchedulerFactory:1208] - Using default implementation for ThreadExecutor
+2018-08-11 14:44:24.530 [INFO ] [org.quartz.core.SchedulerSignalerImpl:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-08-11 14:44:24.531 [INFO ] [org.quartz.core.QuartzScheduler:229] - Quartz Scheduler v.2.3.0 created.
+2018-08-11 14:44:24.531 [INFO ] [org.quartz.simpl.RAMJobStore:155] - RAMJobStore initialized.
+2018-08-11 14:44:24.532 [INFO ] [org.quartz.core.QuartzScheduler:294] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'schedulerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-08-11 14:44:24.532 [INFO ] [org.quartz.impl.StdSchedulerFactory:1362] - Quartz scheduler 'schedulerFactory' initialized from an externally provided properties instance.
+2018-08-11 14:44:24.532 [INFO ] [org.quartz.impl.StdSchedulerFactory:1366] - Quartz scheduler version: 2.3.0
+2018-08-11 14:44:24.533 [INFO ] [org.quartz.core.QuartzScheduler:2287] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@407cf41
+2018-08-11 14:44:24.804 [INFO ] [org.springframework.boot.StartupInfoLogger:59] - Started BatchApplication in 1.353 seconds (JVM running for 1.634)
+2018-08-11 14:44:26.793 [INFO ] [org.quartz.core.QuartzScheduler:547] - Scheduler schedulerFactory_$_NON_CLUSTERED started.
+2018-08-11 14:45:00.002 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-11 14:46:00.000 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
+2018-08-11 14:47:00.001 [INFO ] [org.sports.batch.quartz.job.GrabDataJob:19] - GrabDataJob
