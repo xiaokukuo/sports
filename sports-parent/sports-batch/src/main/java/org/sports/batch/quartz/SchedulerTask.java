@@ -36,9 +36,20 @@ public class SchedulerTask {
 		task.setId(111);
 		task.setTaskName("365");
 		task.setTaskGroup("group1");
-		task.setCron("0 0/1 * * * ?");
+		task.setCron("0 0/1 0-6,16-23 * * ?");
 		task.setClassName("org.sports.batch.quartz.job.GrabDataJob");
 		task.setTaskType("Y");
+		
+		
+		BatchTaskInfo task2 = new BatchTaskInfo();
+		task2.setId(111);
+		task2.setTaskName("clear");
+		task2.setTaskGroup("clearTable");
+		task2.setCron("0 0 7 * * ?");
+		task2.setClassName("org.sports.batch.quartz.job.ClearTableJob");
+		task2.setTaskType("Y");
+		
+		taskInfos.add(task2);
 		taskInfos.add(task);
 	}
 	
@@ -72,9 +83,7 @@ public class SchedulerTask {
 			JobKey jobKey = JobKey.jobKey(task.getTaskName(),task.getTaskGroup());
 			JobDataMap jdm = scheduler.getJobDetail(jobKey).getJobDataMap();
 			String  oldCron =  (String) jdm.get("jobScheduler");
-			if (oldCron.equals(task.getCron())) {
-				System.err.println("任务不变");
-			}else{
+			if (!oldCron.equals(task.getCron())) {
 				deleteJob(task, scheduler);
 				//System.err.println("任务执行时间改变");
 				addJob(task, scheduler);
