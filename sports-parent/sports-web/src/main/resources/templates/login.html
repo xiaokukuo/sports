@@ -4,30 +4,33 @@
 <script src="/sportweb/static/jquery-3.3.1.js"></script>
 <link href="/sportweb/static/css/odds.css" rel="stylesheet"
 	type="text/css">
+
+
 </head>
-	
+
 <body>
-	
-			<form action="yanz">
-			<input type="text" id="captcha" name="captcha" class="text"
-			maxlength="10" /> <img id="captchaImage" src="captcha" onclick="captchaImage()" />
-			<br>
-        name:<input type="text" name="username">
-        password:<input type="password" name="password">
-       <input type="submit" value="提交" action="/yanz"
-            class="font" style="width:240px;height:35px;background:#f19e28">
-</form>
+
+	<form action="yanz">
+		<input type="text" maxlength="4" id="captcha" name="captcha"
+			class="text" /> 
+			<img id="captchaImage" src="captcha"
+			onclick="captchaImage1()" /> 
 			
-			
-			
-	</tr>
-	<script type="text/javascript">
-		function captchaImage(){
-			$('#captchaImage').attr("src", "captcha?timestamp=" + (new Date()).valueOf());
-		}
-		
-	</script>
-	
+			<br> name:<input type="text"
+			name="username"> password:<input type="password"
+			name="password"> <input type="submit" value="提交"
+			action="/yanz" class="font"
+			style="width: 240px; height: 35px; background: #f19e28">
+	</form>
+<script type="text/javascript">
+	 $("#captcha").blur(function() {
+		alert(12);
+	}); 
+	function captchaImage1() {
+		$('#captchaImage').attr("src",
+				"captcha?timestamp=" + (new Date()).valueOf());
+	};
+</script>
 </body>
 
 </html>
